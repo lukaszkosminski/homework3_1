@@ -1,4 +1,4 @@
-public class Client{
+public class Client {
 
     private String name;
     private String telephone;
@@ -38,9 +38,9 @@ public class Client{
     @Override
     public String toString() {
         return "Client{" +
-                "name='" + name + '\'' +
-                ", telephone='" + telephone + '\'' +
-                ", adress='" + adress + '\'' +
+                "name= " + name  +
+                ", telephone= " + telephone  +
+                ", adress= " + adress  +
                 '}';
     }
 }
