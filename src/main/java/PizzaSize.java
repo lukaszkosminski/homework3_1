@@ -1,5 +1,5 @@
 public enum PizzaSize {
     small,
     medium,
-    large
+    big
 }

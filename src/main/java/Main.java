@@ -4,7 +4,7 @@ public class Main {
 
         Order order1 = new Order(1);
         Client client1 = new Client("Mirek", "456456456", "Lakowa 2A");
-        Pizza pizza1 = new Pizza(PizzaSize.large, PizzaType.Peperoni, 1);
+        Pizza pizza1 = new Pizza(PizzaSize.big, PizzaType.Peperoni, 1);
         Drinks drink1 = new Drinks(DrinksType.juice, 1);
 
         order1.addClient(client1);
@@ -35,8 +35,8 @@ public class Main {
         order3.addDrink(drinks3);
         System.out.println(order3);
 
-        System.out.println("equals() czy zamowienie 1 jest takie samo jak zamowienie 2? " + order1.equals(order2));
-        System.out.println("hashcode() hash zamowienia 1: " + order1.hashCode() + " jest rozny o hash zamowienia 2: " + order2.hashCode());
+        System.out.println("equals() czy pizza1 jest taka sama jak pizza2? " + pizza1.equals(pizza2));
+        System.out.println("hashcode() hash pizza1: " + pizza1.hashCode() + " jest rozny od hash pizza2: " + pizza2.hashCode());
     }
 
 }
