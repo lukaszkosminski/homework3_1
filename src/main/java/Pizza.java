@@ -1,4 +1,4 @@
-public class Pizza  {
+public class Pizza {
 
     private PizzaSize pizzaSize;
     private PizzaType pizzaType;
@@ -43,6 +43,24 @@ public class Pizza  {
                 ", pizzaType=" + pizzaType +
                 ", quantityPizza=" + quantityPizza +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Pizza pizza = (Pizza) o;
+
+        if (pizzaSize != pizza.pizzaSize) return false;
+        return pizzaType == pizza.pizzaType;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = pizzaSize != null ? pizzaSize.hashCode() : 0;
+        result = 31 * result + (pizzaType != null ? pizzaType.hashCode() : 0);
+        return result;
     }
 }
 

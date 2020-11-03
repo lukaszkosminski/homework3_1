@@ -1,4 +1,4 @@
-public class Hamburger  {
+public class Hamburger {
     private HamburgerType hamburgerType;
     private HamburgerSize hamburgerSize;
     private Integer quantityHamburger;
