@@ -13,6 +13,7 @@ public class Main {
         System.out.println(order1);
 
 
+
         Order order2 = new Order(2);
         Client client2 = new Client("Krysia", "456123789", "Nadrzeczna 6/3");
         Pizza pizza2 = new Pizza(PizzaSize.small, PizzaType.Hawaii, 1);

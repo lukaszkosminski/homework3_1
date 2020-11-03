@@ -48,9 +48,8 @@ public class Order {
                 "pizza=" + pizza +
                 ", hamburger=" + hamburger +
                 ", drink=" + drink +
+                ", client=" + client +
                 ", orderNumber=" + orderNumber +
                 '}';
     }
-
-
 }
