@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Pizza {
 
     private PizzaSize pizzaSize;
@@ -49,18 +51,15 @@ public class Pizza {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-
         Pizza pizza = (Pizza) o;
-
-        if (pizzaSize != pizza.pizzaSize) return false;
-        return pizzaType == pizza.pizzaType;
+        return pizzaSize == pizza.pizzaSize &&
+                pizzaType == pizza.pizzaType &&
+                quantityPizza.equals(pizza.quantityPizza);
     }
 
     @Override
     public int hashCode() {
-        int result = pizzaSize != null ? pizzaSize.hashCode() : 0;
-        result = 31 * result + (pizzaType != null ? pizzaType.hashCode() : 0);
-        return result;
+        return Objects.hash(pizzaSize, pizzaType, quantityPizza);
     }
 }
 
